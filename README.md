@@ -75,13 +75,7 @@ exit
 ## 🚀 Caching System
 
 To make the CLI faster, responses from the PokéAPI are cached in memory.
-
-**Cache design (summary):**
 - `Cache` uses a `map[string]cacheEntry` protected by a `sync.Mutex` for concurrency safety.
-- Each `cacheEntry` holds:
-  - `createdAt` — when the entry was added.
-  - `val` — raw cached data as `[]byte`.
-- A background `reapLoop()` driven by a `time.Ticker` periodically removes entries older than the configured interval.
 
 This reduces redundant API calls and makes repeated navigation feel instant.
 
