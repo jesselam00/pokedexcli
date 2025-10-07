@@ -6,7 +6,7 @@ A command-line Pokédex built in Go. Explore the Pokémon world, catch Pokémon,
 
 ## Overview
 
-Build a REPL (Read–Eval–Print Loop) CLI that makes HTTP requests to the PokéAPI, parses JSON responses in Go, and provides a short, snappy interface for exploring location areas and managing a local Pokédex.
+A REPL (Read–Eval–Print Loop) CLI that makes HTTP requests to the PokéAPI, parses JSON responses in Go, and provides a short, snappy interface for exploring location areas and managing a local Pokédex.
 
 ---
 
